@@ -1,0 +1,192 @@
+#grid {
+    display: grid;
+    grid-template-rows: 20% 1fr 30%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c"
+    "d e f"
+    "g h i";
+    height: 100vh;
+    align-content: start;
+ 
+
+}
+   
+#grid1 {
+    grid-area: a;
+    padding: 10px;
+   
+   
+}
+
+
+#grid2 {
+    grid-area: b;
+    margin: 30px;
+    padding: 10px;
+    background-color: ivory;
+    width: 500px;
+ 
+     
+   
+   
+
+
+}
+#grid3 {
+  grid-area: c;
+  background-color: ivory;
+  padding: 15px;
+  margin: 5px;
+  height: 200px;
+}
+
+
+
+body{
+    font: courier;
+color: #503D42;
+background: ivory;
+font-size: 16px;
+margin: 40;
+}
+h1 {
+    color: #503D42;
+    padding: 10px;
+    position: relative;
+    font-size: 30px;
+    background-color: #748B57;
+    margin: 10px;
+ 
+}
+h2 {
+    color: #748B57;
+    padding: 10px;
+}
+h3 {
+    padding: 5px;
+    color: #748B57;
+    position: relative;
+    left: 50px;
+   
+}
+h2, h3 {
+    text-decoration: underline;
+    
+}
+
+.hero {
+    background-image: url(../images/large.jpg);
+    height:60%;
+    background-size: cover;
+    background-position: center;
+  
+    background-color: #748b75;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+
+.cvphoto {
+    border-radius: 50%;
+    position:relative;
+    margin: 20px;
+
+   
+
+    
+ }
+
+
+ul.nav > li {
+display: inline-block;
+padding: 10px;
+ } 
+ ul.nav {
+    padding: 0px;
+    background-color: bisque;
+    text-align: center;
+
+ }
+ footer {
+    background-color: #748B75;
+    color:ivory;
+    text-align: center;
+    
+ }
+ input[type=email] {
+    position: relative;
+    
+ }
+ select {
+    position: relative;
+    left: 10px;
+    text-align: center;
+ }
+ input[type=submit] {
+    position: relative;
+   
+    
+    
+ }
+ textarea {
+    position: static;
+  
+    
+    
+ }
+ li {
+    list-style: none;
+ }
+ h4 {
+    background-color: #748b75;
+    
+    color: ivory;
+    padding: 5px;
+ }
+ 
+
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 768px) {
+  
+  #grid2 {
+   
+    grid-area: d;
+}
+#grid3 {
+  
+   grid-area: g;
+ 
+  }
+
+.hero {
+    max-width: 100%;
+    height: auto;
+    background-size: contain;
+    background-image: url(../images/largesmall.jpg);
+
+}
+p {padding-left: 10px;}
+
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    .hero {
+        max-width: 100%;
+        height: auto;
+        background-size: contain;
+        background-image: url(../images/largemed.jpg);}
+       
+          #grid2 {
+   
+            grid-area: d;
+        }
+        #grid3 {
+          
+           grid-area: g;
+         
+          }
+        p {
+            padding-left: 10px;
+        }}
